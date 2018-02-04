@@ -1,0 +1,47 @@
+<div class="table-container">
+    <% console.log(success); %>
+    <% if (success){ %>
+    <ul>
+        <% for(i in data) { %>
+        <li><%= data[i] %></li>
+        <% } %>
+    </ul>
+    <div class="word-net-copyright">Ⓒ WordNet. Princeton University. 2010. wordnet.princeton.edu</div>
+    <% }else{ %>
+    <div>No definition found!</div>
+    <div>Look up<a href="https://www.thefreedictionary.com/<%= word %>" target="_blank"
+                   rel="nofollow noreferrer"> here </a>instead.
+    </div>
+    <div class="suggest-txt">
+        Or suggest your word to Findword.org
+    </div>
+    <input class="suggest-btn form-btn" name="suggest-btn" type="button" value="Suggest">
+    <div id="suggest-word-block" class="row">
+        <div class="col-md-12">
+            <form method="post" action="" id="suggestForm">
+                <div class="form-group">
+                    <div class="row">
+                    <div class="col-md-4">
+                        <input class="adword-textarea adword-input form-control" placeholder="Your word" value="<%= word %>" id="request-word" name="request-word" type="text"
+                               required="">
+                    </div>
+                    <div class="col-md-4">
+                        <input class="adword-textarea" placeholder="Definition" type="text" id="request-definition" name="request-definition"
+                               required="">
+                    </div>
+                    <div class="col-md-2">
+                        <button id="singlebutton" name="singlebutton" class="btn form-btn">Send</button>
+                    </div>
+                    </div>
+                </div>
+            </form>
+            <div id="word-status"></div>
+        </div>
+    </div>
+    <% } %>
+</div>
+<script>
+    jQuery('[name=suggest-btn]').click(function () {
+        jQuery('#suggest-word-block').show();
+    });
+</script>

@@ -1,0 +1,29 @@
+<% for(i in tableTitles) { %>
+<div class="word-tips-title">Words with <b><%= tableTitles[i] %></b> letters:</div>
+<table class="tablesorter wordTipsTable">
+    <thead>
+    <tr>
+        <th> Word</th>
+        <th> Scrabble Points</th>
+        <th> WWF Points</th>
+    </tr>
+    </thead>
+    <% for( j in length){ %>
+    <%if(length[j]==tableTitles[i]){ %>
+    <tr>
+        <td>
+            <a href="https://www.thefreedictionary.com/<%= words[j].toLowerCase() %>" target="_blank"
+               rel="nofollow noreferrer"><%= words[j].toLowerCase() %></a>
+        </td>
+        <td style="color:#0000ee; text-transform:lowercase; text-align: center;">
+            <%= scrabblePoints[j] %>
+        </td>
+        <td style="color:#0000ee; text-transform:lowercase; text-align: center;">
+            <%= wwfPoints[j] %>
+        </td>
+    </tr>
+    <% } %>
+    <% } %>
+</table>
+<% } %>
+

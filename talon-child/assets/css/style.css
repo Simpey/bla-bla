@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+.page .entry-title {
+    display: none;
+}
+
+.site-title > a {
+    font-size: 40px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.site-footer {
+    padding: 30px 0;
+}
+
+.scrabble-header {
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.scrabble-notice {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.typeletters {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.wt-searchword {
+    font-weight: bold;
+}
+
+.scrabble-options {
+    margin: 5px 0 15px 0;
+}
+
+.form-btn {
+    background-color: #2d3142 !important;
+}
+
+.scrabble-radio {
+    margin: 10px 0;
+}
+
+.site-branding a {
+    font-size: 35px;
+}
+
+.page-title {
+    font-family: 'Acme', sans-serif;
+    font-size: 50px;
+    line-height: 100%;
+}
+
+.page-notice {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 5px;
+    color: #aeaeae;
+}
+
+.dictionary-input {
+    width: 100%;
+}
+
+.site-content {
+    min-height: calc(100vh - 300px);
+}
+
+footer {
+    height: 140px;
+}
+
+form#wordTipsForm {
+    text-align: center;
+}
+
+form#wordTipsForm > .row {
+    margin: 10px 0;
+}
+
+.wordTipsTable {
+    margin-top: 10px;
+}
+
+.suggest-txt {
+    color: #aeaeae;
+    font-style: italic;
+}
+
+.adword-textarea{
+    resize: vertical;
+}
+
+.main-content-widget{
+    margin-bottom: 10px;
+}
+
+.word-net-copyright{
+    font-weight: bold;
+}
+
+#suggest-word-block{
+    display: none;
+}
+
+#scrabbleTable{
+    margin-top: 50px;
+}
+
+input::-webkit-input-placeholder {
+    color: #aeaeae !important;
+    opacity: 1 !important;
+}
+input:-moz-placeholder {
+    color: #aeaeae !important;
+    opacity: 1 !important;
+}
+input::-moz-placeholder {
+    color: #aeaeae !important;
+    opacity: 1 !important;
+}
+input:-ms-input-placeholder {
+    color: #aeaeae !important;
+    opacity: 1 !important;
+}
+
+#words-meaning-list .suggest-btn{
+    padding:10px 30px;
+}
+
+#suggest-word-block{
+    margin-top: 30px;
+}
+
+.adword-textarea{
+    width: 100%;
+}
+
+#words-tips-table{
+    margin-top: 30px;
+}
+
+.wordTipsTable th{
+    width: 33.3333%;
+    cursor: pointer;
+}
+
+#word-status {
+    color: #aeaeae;
+}
+
+#scrabbleTable th{
+    width:50%;
+    cursor: pointer;
+}
